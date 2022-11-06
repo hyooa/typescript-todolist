@@ -1,0 +1,18 @@
+@media screen and (min-width : 415px) {
+    body {
+        display: none;
+    }
+}
+@media screen and (max-width : 414px) {
+    * {
+        margin: 0 auto;
+        padding: 0;
+        box-sizing: border-box;
+        color: #222;
+    }
+
+    li {
+        list-style: none;
+    }
+
+}
