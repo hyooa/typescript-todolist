@@ -2,16 +2,28 @@
 #todoHead {
     line-height: 1.5;
     margin-left: 10px;
+    /* border-bottom: 1px solid #eee; */
 }
-#todoHead > h1 {
-    font-size: 1.6em;
+
+#todoHead>h1 {
+    font-size: 1.3em;
 }
-#todoHead> div:last-child {
+
+#todoHead>div:nth-child(2) {
+    color: #999;
+}
+
+#todoHead>div:last-child {
     padding: 10px 0;
+    color: #ffbfc3;
+    font-weight: bold;
 }
-#todoHead> div:last-child > span {
+
+#todoHead>div:last-child>span {
     font-weight: bold;
     padding-left: 5px;
+    color: #ff9da3;
+    font-size: 1.2em;
 }
 
 /* todoInsert */
@@ -20,46 +32,47 @@
     background-color: #eee;
     padding-top: 30px;
 }
+
 #todoInsert input {
-    width: 270px;
+    /* width: 270px; */
+    width: 70%;
     height: 40px;
     border: none;
     outline: none;
     padding-left: 10px;
     border-radius: 8px;
 }
+
 #todoInsert button {
     margin-left: 15px;
     border-radius: 50%;
     outline: none;
     border: none;
-    background-color: #ccc;
-    padding: 8px 5px;
+    background-color: #ffbfc3;
+    padding: 11px 8px;
     vertical-align: middle;
-}
-
-
-/* todoList */
-#todoList {
 }
 
 /* todoItem */
 #todoItem {
     margin: 8px 0;
 }
+
 #todoItem li {
     border-radius: 8px;
-    background-color: #ccc;
-    /* height: 40px; */
-    padding: 0 5px;
+    background-color: #fbedea;
+    padding: 10px;
     width: 80%;
-    text-align: right;
-    line-height: 2.8;
+    display: flex;
+    align-items: center;
 }
-#todoItem li > span:first-child {
+
+#todoItem li>div:first-child {
+    width: 90%;
 }
-#todoItem li > span:last-child {
-    padding: 15px;
+
+#todoItem li>div:last-child {
+    width: 10%;
 }
 
 #none {

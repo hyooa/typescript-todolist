@@ -14,18 +14,18 @@ const TodoItem = ({ todo, onToggle, onRemove }: TodoItemProps) => {
     const handleRemove = () => onRemove(todo.id)
 
     const textStyle: CSSProperties = {
-        textDecoration: todo.done ? 'line-through' : 'none'
+        textDecoration: todo.done ? 'line-through' : 'none',
+        color: todo.done ? '#999' : '#222'
     }
     const removeStyle: CSSProperties = {
-        color: 'red',
         marginLeft: 8,
     }
 
     return (
         <div id='todoItem'>
             <li>
-                <span onClick={handleToggle} style={textStyle}>{todo.text}</span>
-                <span onClick={handleRemove} style={removeStyle}><AiFillDelete/></span>
+                <div onClick={handleToggle} style={textStyle}>{todo.text}</div>
+                <div onClick={handleRemove} style={removeStyle}><AiFillDelete/></div>
             </li>
         </div>
     );

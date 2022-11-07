@@ -24,7 +24,8 @@ const TodoApp = () => {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        fontSize: '3em',
+        fontSize: '3.3em',
+        color: '#ffbfc3',
     }
 
     return (
