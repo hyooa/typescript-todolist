@@ -30,7 +30,7 @@ const TodoApp = () => {
 
     return (
         <div id='todoApp'>
-            <h1 style={h1Style}>To Do List</h1>
+            <a href='/'><h1 style={h1Style}>To Do List</h1></a>
             <TodoHead todos={todos}></TodoHead>
             <TodoList todos={todos} onToggle={onToggle} onRemove={onRemove}></TodoList>
             <TodoInsert onInsert={onInsert}></TodoInsert>

@@ -1,75 +1,92 @@
-@media screen and (min-width : 415px) {
-    #todoApp {
-        height: 800px;
-        overflow: hidden;
-        border-radius: 36px;
-        background-color: #fff;
-    }
-
-    #todoApp> :nth-child(1) {
-        height: 10%;
-    }
-
-    #todoApp> :nth-child(2) {
-        height: 13%;
-        padding: 20px 0;
-    }
-
-    #todoApp> :nth-child(3) {
-        height: 35%;
-        overflow-y: scroll;
-    }
-
-    #todoApp> :nth-child(4) {
-        height: 30%;
-    }
-
-    /* main */
-    #main {
-        border-radius: 36px;
-        background-color: #fbedea;
-        text-align: center;
-        padding-top: 220px;
-    }
-
-    #main h1 {
-        font-size: 3.8em;
-        color: #ffbfc3;
-        padding-bottom: 50px;
-    }
-
-    #main>div>div:first-child {
-        color: #ffbfc3;
-        font-size: 15em;
-    }
-
-    #main>div {
-        position: relative;
-    }
-
-    #main a {
-        text-decoration: none;
-        color: #fff;
-        font-weight: bold;
-        font-size: 1.2em;
-    }
-
-    #main>div>div:last-child {
-        position: absolute;
-        top: 53%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .animate__animated.animate__bounce {
-        --animate-duration: 2s;
-    }
+#todoApp {
+    overflow: hidden;
+    background-color: #fff;
+    height: 100vh;
 }
 
-@media screen and (max-width : 414px) {
+#todoApp> :nth-child(1) {
+    height: 15%;
+}
+
+#todoApp> :nth-child(2) {
+    height: 20%;
+    padding: 20px 0;
+}
+
+#todoApp> :nth-child(3) {
+    height: 55%;
+    overflow-y: scroll;
+}
+
+#todoApp> :nth-child(4) {
+    height: 20%;
+}
+
+#main {
+    height: 100vh;
+    background-color: #fbedea;
+    text-align: center;
+    padding-top: 220px;
+}
+
+#main h1 {
+    font-size: 3.8em;
+    color: #ffbfc3;
+    padding-bottom: 50px;
+}
+
+#main>div>div:first-child {
+    color: #ffbfc3;
+    font-size: 15em;
+}
+
+#main>div {
+    position: relative;
+}
+
+#main a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+#main>div>div:last-child {
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.animate__animated.animate__bounce {
+    --animate-duration: 2s;
+}
+
+#mobile {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+}
+
+#main {
+    display: none;
+}
+
+/* 모바일용 320~480 */
+@media screen and (max-width : 480px) {
+    #mobile {
+        display: none;
+    }
+
+    #main {
+        display: block;
+    }
+
     #todoApp {
-        height: 100vh;
-        border-radius: none;
+        min-width: 320px;
     }
 
     #todoApp> :nth-child(1) {
@@ -86,47 +103,6 @@
     }
 
     #todoApp> :nth-child(4) {
-        height: 20%;
-    }
-
-    /* main */
-    #main {
-        height: 100vh;
-        background-color: #fbedea;
-        text-align: center;
-        padding-top: 220px;
-    }
-
-    #main h1 {
-        font-size: 3.8em;
-        color: #ffbfc3;
-        padding-bottom: 50px;
-    }
-
-    #main>div>div:first-child {
-        color: #ffbfc3;
-        font-size: 15em;
-    }
-
-    #main>div {
-        position: relative;
-    }
-
-    #main a {
-        text-decoration: none;
-        color: #fff;
-        font-weight: bold;
-        font-size: 1.2em;
-    }
-
-    #main>div>div:last-child {
-        position: absolute;
-        top: 53%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .animate__animated.animate__bounce {
-        --animate-duration: 2s;
+        height: 30%;
     }
 }
