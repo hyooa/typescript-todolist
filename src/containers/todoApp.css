@@ -2,6 +2,7 @@
     overflow: hidden;
     background-color: #fff;
     height: 100vh;
+    max-width: 450px;
 }
 
 #todoApp> :nth-child(1) {
@@ -27,6 +28,7 @@
     background-color: #fbedea;
     text-align: center;
     padding-top: 220px;
+    max-width: 450px;
 }
 
 #main h1 {
@@ -62,17 +64,17 @@
     --animate-duration: 2s;
 }
 
-#mobile {
+/* #mobile {
     display: block;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 2em;
-}
+} */
 
 #main {
-    display: none;
+    /* display: none; */
 }
 
 /* 모바일용 320~480 */
